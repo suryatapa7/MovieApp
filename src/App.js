@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     if (searchText) {
       // console.log(searchText, "is the search text")
-      fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=36a8fd99&s=${searchText}`)
+      fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=36a8fd99&s=${searchText}`)
         .then(response => response.json())
         .then(data => {
           if (data.Response === "True") {

@@ -12,7 +12,7 @@ const MovieView = () => {
 
     useEffect(() => {
         // console.log("Make an Api Request", id); http://www.omdbapi.com/?i=tt0848228&apikey=36a8fd99
-        fetch(`http://www.omdbapi.com/?i=${id}&apikey=36a8fd99`)
+        fetch(`https://www.omdbapi.com/?i=${id}&apikey=36a8fd99`)
             .then(response => response.json())
             .then(data => {
                 //   setTimeout(() => {
